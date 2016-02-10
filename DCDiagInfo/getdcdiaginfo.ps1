@@ -129,6 +129,7 @@
                 
                 Write-Verbose "dcdiag command ran via Invoke-Command..."
                 
+                #out string
                 $diagstring = $dcdiag | Out-String
                 
                 Write-Verbose $diagstring
