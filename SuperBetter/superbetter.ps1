@@ -46,8 +46,7 @@
 	.\superbetter.ps1 -sendEmail $true -testEmail $true
 .EXAMPLE 
 	.\superbetter.ps1 -sendDiagEml "email@address.com"    
-#>
-#PUBLIC SANITIZED  
+#> 
 [cmdletbinding()]
 Param(
     [boolean]
