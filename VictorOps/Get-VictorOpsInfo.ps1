@@ -73,7 +73,7 @@ if (!((Get-PSSnapin -name "Quest.ActiveRoles.ADManagement" -ea SilentlyContinue)
         Start-Process "http://software.dell.com/products/activeroles-server/powershell.aspx"
         Break;
 }
-
+ 
 $apiKey       = ''
 $apiID        = ''
 $baseURL      = 'https://api.victorops.com' 
@@ -94,7 +94,7 @@ function Get-OnCallSchedule {
         $onCallURL
     )
     
-
+ 
     $fullURL = $baseURL + $onCallURL
     
     if ($fullURL) {
@@ -257,7 +257,7 @@ Switch ($getInfo) {
          
          }
     }  
-  
+  #waldo
   {$_ -like "*Upcoming*"} {
 
         if (!$team) {Write-Host `n"Team not specified!"`n -foregroundcolor Red;break}
